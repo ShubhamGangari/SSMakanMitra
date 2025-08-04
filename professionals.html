@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Professional - SS Makan Mitra</title>
+    <meta name="description" content="Find verified construction professionals in your area">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>SS Makan Mitra</h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="professionals.html" class="nav-link active">Find a Professional</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Find all types of Mistri/Contractor</h1>
+            <p>
+                Connect with Engineer, Plumber, Electrician, Tile Mistri, False Ceiling Contractor, Building Contractor, Carpenter, Bar Binder,
+                Rajmistri, Shuttering Contractor, Aluminium/Steel Work Contractor
+            </p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <select id="cityFilter" class="filter-select">
+                    <option value="">All Cities</option>
+                    <option value="Kanpur">Kanpur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Prayagraj">Prayagraj</option>
+                    <option value="Gorakhpur">Gorakhpur</option>
+                    <option value="Haldwani">Haldwani</option>
+                    <option value="Dehradun">Dehradun</option>
+                </select>
+                <select id="serviceFilter" class="filter-select">
+                    <option value="">All Services</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Tile Mistri">Tile Mistri</option>
+                    <option value="False Ceiling Contractor">False Ceiling Contractor</option>
+                    <option value="Building Contractor">Building Contractor</option>
+                    <option value="Carpenter">Carpenter</option>
+                    <option value="Bar Binder">Bar Binder</option>
+                    <option value="Rajmistri">Rajmistri</option>
+                    <option value="Shuttering Contractor">Shuttering Contractor</option>
+                    <option value="Aluminium / Steel Work Contractor">Aluminium / Steel Work Contractor</option>
+                </select>
+                <button id="clearFilters" class="btn btn-secondary">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professionals Section -->
+    <section class="professionals-section">
+        <div class="container">
+            <div class="professionals-grid" id="professionalsGrid">
+                
+                <!-- Professionals will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SS Makan Mitra</h3>
+                    <p>Your trusted partner for construction learning and professional services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="professionals.html">Professionals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ssmakanmitra.com</p>
+                    <p>Phone: +91-906888442</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SS Makan Mitra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="professionals-data.js"></script>
+    <script>
+        // Load professionals when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProfessionals();
+            setupFilters();
+        });
+    </script>
+</body>
+</html>
